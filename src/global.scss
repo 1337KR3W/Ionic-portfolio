@@ -38,7 +38,23 @@
 
 //-----COLORS PALETTE
 $color-primary: greenyellow;
+$color-green-dark: green;
+$color-blue-light: rgb(71, 143, 250);
+$color-magenta-light: rgb(185, 65, 233);
 
 ion-card-title {
     color: $color-primary;
+
+}
+
+.green-text {
+    color: $color-green-dark;
+}
+
+.blue-text {
+    color: $color-blue-light;
+}
+
+.magenta-text {
+    color: $color-magenta-light;
 }

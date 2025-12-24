@@ -5,7 +5,7 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
-  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonCol, IonIcon, IonItem],
+  imports: [IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonCol],
 })
 export class SkillsComponent implements OnInit {
 

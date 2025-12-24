@@ -73,7 +73,7 @@ ion-card-title {
     margin-top: 12px;
 }
 
-//----SKILLS ITEMS
+
 .skills-img img:hover {
     cursor: pointer;
 
@@ -84,9 +84,8 @@ ion-card-title {
 
     content: '';
     position: absolute;
-    width: 85%; // Más ancho que el padre para que al rotar cubra todo
+    width: 85%;
     height: 60%;
-    // Degradado verdeamarillo neón
     background: conic-gradient($color-green-dark, $color-green-dark);
     animation: 4s forwards linear infinite;
 
@@ -97,10 +96,60 @@ ion-card-title {
 
 }
 
+ion-button {
+    margin: 0 6px;
+    --background: greenyellow;
+}
+
+.project-card {
+    position: relative;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .card-content-wrapper {
+        transition: filter 0.4s ease;
+    }
+
+    .hover-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(140, 180, 128, 0.301);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px); //safari
+
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 2;
+    }
+
+    &:hover {
+        .card-content-wrapper {
+            filter: blur(2px);
+        }
+
+        .hover-overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.github-btn {
+    --border-radius: 8px;
+    font-weight: bold;
+    text-transform: none;
+    transition: transform 0.2s ease;
 
 
-
-
-
-
-#angular-img {}
+    &:hover {
+        transform: scale(1.05);
+    }
+}

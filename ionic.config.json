@@ -1,7 +1,0 @@
-{
-  "name": "ionic-portfolio",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

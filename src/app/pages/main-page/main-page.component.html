@@ -1,5 +1,19 @@
 <ion-content>
+
   <app-about-me></app-about-me>
+
+  @if (sections['skills']) {
+  <app-sections [section]="sections['skills']"></app-sections>
+  }
   <app-skills></app-skills>
+
+  @if (sections['projects']) {
+  <app-sections [section]="sections['projects']"></app-sections>
+  }
   <app-projects></app-projects>
+
+
+
+
+
 </ion-content>

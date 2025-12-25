@@ -5,16 +5,25 @@ import { ProjectsComponent } from "src/app/components/projects/projects.componen
 import { IonContent } from "@ionic/angular/standalone";
 import { SkillService } from 'src/app/services/skill/skill-service';
 import { Skill } from 'src/app/models/skill/skill.model';
+import { SectionService } from 'src/app/services/section/section-service';
+import { SectionCard } from 'src/app/models/card/section-card/section-card.model';
+import { SectionsComponent } from "src/app/components/sections/sections.component";
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent],
+  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent],
 })
 
-export class MainPageComponent {
+export class MainPageComponent implements OnInit {
 
-
+  private sectionService = inject(SectionService);
+  sections: Record<string, SectionCard> = {};
+  ngOnInit(): void {
+    const allSections = this.sectionService.getSections();
+    this.sections['projects'] = allSections.find(s => s.id === 2)!;
+    this.sections['skills'] = allSections.find(s => s.id === 1)!;
+  }
 
 }

@@ -1,7 +1,5 @@
 <ion-content>
-
   <app-about-me></app-about-me>
-
   @if (sections['skills']) {
   <app-sections [section]="sections['skills']"></app-sections>
   }
@@ -12,8 +10,12 @@
   }
   <app-projects></app-projects>
 
-
-
-
-
+  @if (sections['work-experience']) {
+  <app-sections [section]="sections['work-experience']"></app-sections>
+  }
+  <app-works></app-works>
+  @if (sections['certs-and-education']) {
+  <app-sections [section]="sections['certs-and-education']"></app-sections>
+  }
+  <app-certs-and-education></app-certs-and-education>
 </ion-content>

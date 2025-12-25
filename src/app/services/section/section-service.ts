@@ -19,6 +19,16 @@ export class SectionService {
       title: 'Projects',
       description: 'Heres a small list with my projects:'
     },
+    {
+      id: 3,
+      title: 'Work experience',
+      description: 'A summary of my professional trajectory and the impact I’ve made at different companies:'
+    },
+    {
+      id: 4,
+      title: 'Certifications & Education',
+      description: 'A record of my academic background and specialized technical certifications:'
+    },
   ];
 
   getSections(): SectionCard[] {

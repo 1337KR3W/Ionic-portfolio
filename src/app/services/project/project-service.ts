@@ -9,42 +9,34 @@ export class ProjectService {
   private readonly projects: Project[] = [
     {
       id: 1,
-      title: 'Pynotech',
-      subtitle: 'Notepad using PySide6',
-      description: 'Pynotech a notepad developed using PySide6 in my Bachelors Thesis (TFG).',
-      imgUrl: 'https://private-user-images.githubusercontent.com/32680720/338114808-9316e2fc-fb30-45b1-a28a-81b99496083b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY1OTkxOTAsIm5iZiI6MTc2NjU5ODg5MCwicGF0aCI6Ii8zMjY4MDcyMC8zMzgxMTQ4MDgtOTMxNmUyZmMtZmIzMC00NWIxLWEyOGEtODFiOTk0OTYwODNiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI0VDE3NTQ1MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRlN2RjNDg1NjM5MDRkOGRmNTJhMDk2OWU0YzA4YzUzYTc0NzczYjMzYzFlOTJlMjhlMzczYjU0MGI1Mjc1YTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ZBunWwmSqW2hCrG9ThRv9CoGyrr1hWAegc92oy94WeU',
-      gitUrl: 'https://github.com/1337KR3W/pyNotech'
-
-    },
-    {
-      id: 2,
       title: 'Acme Platform',
       subtitle: 'Web application server for managing students and teachers',
-      description: 'Acme is a framework based on Spring Boot used during my studies to learn how to create rest services with Java.',
+      description: 'Acme is a framework based on Spring Boot used during my studies to learn how to create rest services with Java..',
       imgUrl: 'https://imgs.search.brave.com/IFaHHI459eI0NZneM6i-3erSiJJLG107qbQoxT7q-a4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZGl4LmNvbS9sb2dv/LzE2MTQ0NzcucG5n',
       gitUrl: 'https://github.com/1337KR3W/DP2-G27-Acme'
 
     },
     {
-      id: 3,
+      id: 2,
       title: 'Virtual Knowledge',
       subtitle: 'Web application in Angular',
-      description: 'Virtual Knowledge is a web app that uses ReqRes public API for managing user data using Angular and Material Design.',
+      description: 'Virtual Knowledge is a web app that uses ReqRes public API for managing user data using Angular and Material Design..',
       imgUrl: 'https://private-user-images.githubusercontent.com/32680720/530072995-ea73be93-6c61-459f-b292-1c5b2b49d448.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2MDI1OTEsIm5iZiI6MTc2NjYwMjI5MSwicGF0aCI6Ii8zMjY4MDcyMC81MzAwNzI5OTUtZWE3M2JlOTMtNmM2MS00NTlmLWIyOTItMWM1YjJiNDlkNDQ4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI0VDE4NTEzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZmNjg4YWMyNTZkYzFkZjdmZjgwMTJhNjAyZTEwNmY3MjQ3NjUxMTFlM2ZlN2Q5ZTZhOWRmZjI4MzQxYTA3MTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.HHmUTmuNcy5NWVPz-AXCNzouPn6B7jLr65QG5eLvdsI',
       gitUrl: 'https://github.com/1337KR3W/Virtualknowledge-Frontend'
 
     },
     {
-      id: 4,
-      title: 'Flet timer',
-      subtitle: 'Simple timer using Flet',
-      description: 'Timer app developed with Flet and Python.',
-      imgUrl: 'https://private-user-images.githubusercontent.com/32680720/338129947-2dbd082f-1d7a-4d5f-86aa-1a6f43bba623.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2NjYzMTIsIm5iZiI6MTc2NjY2NjAxMiwicGF0aCI6Ii8zMjY4MDcyMC8zMzgxMjk5NDctMmRiZDA4MmYtMWQ3YS00ZDVmLTg2YWEtMWE2ZjQzYmJhNjIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI1VDEyMzMzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEyZTVkZmU2MjZjMDI4ODRmZTU4ZDFkMzk4ZGU0OGI5ZTJlMTQwOWVkYWU2MmE0N2IwYmE4N2Y5MDFjZjc5MGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.atVXxbE9jh6x3rca8Qp7WqdgpjxMAgRBa7UVbUaqWj0',
-      gitUrl: 'https://github.com/1337KR3W/flet_timer'
+      id: 3,
+      title: 'getyt',
+      subtitle: 'YouTube streams tool',
+      description: 'getyt is a tool designed to work with Youtube streams.',
+      imgUrl: 'https://private-user-images.githubusercontent.com/32680720/327979415-6599320f-5adf-49fe-8063-786edd7d3416.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2NjcxNDksIm5iZiI6MTc2NjY2Njg0OSwicGF0aCI6Ii8zMjY4MDcyMC8zMjc5Nzk0MTUtNjU5OTMyMGYtNWFkZi00OWZlLTgwNjMtNzg2ZWRkN2QzNDE2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI1VDEyNDcyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcwZmRiOGNiMDA3ZGJmMDQwNmY3NmNiY2MxNzU2MDIzY2JkYTMyOTZlNmFjOWYwMmE0MTkxMTNjYjE1NjAxNTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Cuov6UPJ7bn3WILMoha4RmEQz7udkt20VPuSTZFnV5w',
+      gitUrl: 'https://github.com/1337KR3W/getyt'
 
     },
+
     {
-      id: 5,
+      id: 4,
       title: 'Tkinter timer',
       subtitle: 'Timer using Tkinter',
       description: 'Digital timer developed using Tkinter with Python.',
@@ -53,7 +45,7 @@ export class ProjectService {
 
     },
     {
-      id: 6,
+      id: 5,
       title: 'PySide6 timer',
       subtitle: 'Timer using PySide6',
       description: 'Pomodoro timer using PySide6 with Python.',
@@ -62,16 +54,16 @@ export class ProjectService {
 
     },
     {
-      id: 7,
-      title: 'getyt',
-      subtitle: 'YouTube streams tool',
-      description: 'getyt is a tool designed to work with Youtube streams.',
-      imgUrl: 'https://private-user-images.githubusercontent.com/32680720/327979415-6599320f-5adf-49fe-8063-786edd7d3416.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2NjcxNDksIm5iZiI6MTc2NjY2Njg0OSwicGF0aCI6Ii8zMjY4MDcyMC8zMjc5Nzk0MTUtNjU5OTMyMGYtNWFkZi00OWZlLTgwNjMtNzg2ZWRkN2QzNDE2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI1VDEyNDcyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcwZmRiOGNiMDA3ZGJmMDQwNmY3NmNiY2MxNzU2MDIzY2JkYTMyOTZlNmFjOWYwMmE0MTkxMTNjYjE1NjAxNTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Cuov6UPJ7bn3WILMoha4RmEQz7udkt20VPuSTZFnV5w',
-      gitUrl: 'https://github.com/1337KR3W/getyt'
+      id: 6,
+      title: 'Flet timer',
+      subtitle: 'Simple timer using Flet',
+      description: 'Timer app developed with Flet and Python.',
+      imgUrl: 'https://private-user-images.githubusercontent.com/32680720/338129947-2dbd082f-1d7a-4d5f-86aa-1a6f43bba623.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2NjYzMTIsIm5iZiI6MTc2NjY2NjAxMiwicGF0aCI6Ii8zMjY4MDcyMC8zMzgxMjk5NDctMmRiZDA4MmYtMWQ3YS00ZDVmLTg2YWEtMWE2ZjQzYmJhNjIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjI1VDEyMzMzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEyZTVkZmU2MjZjMDI4ODRmZTU4ZDFkMzk4ZGU0OGI5ZTJlMTQwOWVkYWU2MmE0N2IwYmE4N2Y5MDFjZjc5MGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.atVXxbE9jh6x3rca8Qp7WqdgpjxMAgRBa7UVbUaqWj0',
+      gitUrl: 'https://github.com/1337KR3W/flet_timer'
 
     },
     {
-      id: 8,
+      id: 7,
       title: 'Netscanner',
       subtitle: 'Network scanner',
       description: 'Netscanner is a tool that uses arp packets to discover connected hosts to a private network.',
@@ -80,7 +72,7 @@ export class ProjectService {
 
     },
     {
-      id: 9,
+      id: 8,
       title: 'Pynotech',
       subtitle: 'Notepad using PySide6',
       description: 'Pynotech a notepad developed using PySide6 in my Bachelors Thesis (TFG).',

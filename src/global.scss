@@ -79,7 +79,6 @@ ion-card-title {
 
 
 .skills-img img:hover {
-    cursor: pointer;
 
     transform: scale(1.1);
 }
@@ -111,6 +110,7 @@ ion-button {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+    background-color: rgba(39, 39, 39, 0.877);
 
     .card-content-wrapper {
         transition: filter 0.4s ease;
@@ -152,8 +152,12 @@ ion-button {
     text-transform: none;
     transition: transform 0.2s ease;
 
-
     &:hover {
         transform: scale(1.05);
     }
+}
+
+.section-header {
+
+    box-shadow: 0px 0px 8px $color-primary;
 }

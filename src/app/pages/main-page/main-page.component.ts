@@ -11,6 +11,7 @@ import { CertsAndEducationComponent } from "src/app/components/certs-and-educati
 import { CubeBackgroundComponent } from "src/app/components/cube-background/cube-background.component";
 import { GithubChartComponent } from "src/app/components/github-chart/github-chart.component";
 
+
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -28,6 +29,7 @@ export class MainPageComponent implements OnInit {
     this.sections['projects'] = allSections.find(s => s.id === 2)!;
     this.sections['work-experience'] = allSections.find(s => s.id === 3)!;
     this.sections['certs-and-education'] = allSections.find(s => s.id === 4)!;
+    this.sections['github-activity'] = allSections.find(s => s.id === 5)!;
   }
 
 }

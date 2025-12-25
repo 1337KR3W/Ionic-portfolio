@@ -15,9 +15,15 @@
   <app-sections [section]="sections['work-experience']"></app-sections>
   }
   <app-works></app-works>
+
   @if (sections['certs-and-education']) {
   <app-sections [section]="sections['certs-and-education']"></app-sections>
   }
   <app-certs-and-education></app-certs-and-education>
+
+  @if (sections['github-activity']) {
+  <app-sections [section]="sections['github-activity']"></app-sections>
+  }
   <app-github-chart></app-github-chart>
+
 </ion-content>

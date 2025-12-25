@@ -1,8 +1,22 @@
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>My GitHub Activity</ion-card-title>
-  </ion-card-header>
-  <ion-card-content>
-    <img src="https://ghchart.rshah.org/1337KR3W" alt="Github Chart" />
-  </ion-card-content>
-</ion-card>
+<ion-grid [fixed]="true">
+  <ion-row>
+    @for (ghc of gitHubChart; track ghc.id) {
+    <ion-col>
+      <ion-grid [fixed]="true">
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>{{ghc.title}}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <img [src]="ghc.imgUrl" alt="Github Chart" />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+    }
+  </ion-row>
+</ion-grid>

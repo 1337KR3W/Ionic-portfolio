@@ -29,6 +29,11 @@ export class SectionService {
       title: 'Certifications & Education',
       description: 'A record of my academic background and specialized technical certifications:'
     },
+    {
+      id: 5,
+      title: 'GitHub activity',
+      description: 'A real-time visualization of my daily contributions and coding activity on GitHub:'
+    },
   ];
 
   getSections(): SectionCard[] {

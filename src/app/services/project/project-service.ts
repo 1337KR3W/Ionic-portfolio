@@ -21,7 +21,7 @@ export class ProjectService {
       title: 'Virtual Knowledge',
       subtitle: 'Web application in Angular',
       description: 'Virtual Knowledge is a web app that uses ReqRes public API for managing user data using Angular and Material Design..',
-      imgUrl: 'assets/image/projects/virtual-knowledge.png',
+      imgUrl: './assets/image/projects/virtual-knowledge.png',
       gitUrl: 'https://github.com/1337KR3W/Virtualknowledge-Frontend'
 
     },
@@ -30,7 +30,7 @@ export class ProjectService {
       title: 'getyt',
       subtitle: 'YouTube streams tool',
       description: 'getyt is a tool designed to work with Youtube streams.',
-      imgUrl: 'assets/image/projects/getyt.png',
+      imgUrl: './assets/image/projects/getyt.png',
       gitUrl: 'https://github.com/1337KR3W/getyt'
 
     },
@@ -40,7 +40,7 @@ export class ProjectService {
       title: 'Tkinter timer',
       subtitle: 'Timer using Tkinter',
       description: 'Digital timer developed using Tkinter with Python.',
-      imgUrl: 'assets/image/projects/tkinter-timer.png',
+      imgUrl: './assets/image/projects/tkinter-timer.png',
       gitUrl: 'https://github.com/1337KR3W/tkinter_timer'
 
     },
@@ -49,7 +49,7 @@ export class ProjectService {
       title: 'PySide6 timer',
       subtitle: 'Timer using PySide6',
       description: 'Pomodoro timer using PySide6 with Python.',
-      imgUrl: 'assets/image/projects/pyside6-timer.png',
+      imgUrl: './assets/image/projects/pyside6-timer.png',
       gitUrl: 'https://github.com/1337KR3W/pyside6_timer'
 
     },
@@ -58,7 +58,7 @@ export class ProjectService {
       title: 'Flet timer',
       subtitle: 'Simple timer using Flet',
       description: 'Timer app developed with Flet and Python.',
-      imgUrl: 'assets/image/projects/flet-timer.png',
+      imgUrl: './assets/image/projects/flet-timer.png',
       gitUrl: 'https://github.com/1337KR3W/flet_timer'
 
     },
@@ -67,7 +67,7 @@ export class ProjectService {
       title: 'Netscanner',
       subtitle: 'Network scanner',
       description: 'Netscanner is a tool that uses arp packets to discover connected hosts to a private network.',
-      imgUrl: 'assets/image/projects/netscanner.png',
+      imgUrl: './assets/image/projects/netscanner.png',
       gitUrl: 'https://github.com/1337KR3W/netscanner'
 
     },
@@ -76,7 +76,7 @@ export class ProjectService {
       title: 'Pynotech',
       subtitle: 'Notepad using PySide6',
       description: 'Pynotech a notepad developed using PySide6 in my Bachelors Thesis (TFG).',
-      imgUrl: 'assets/image/projects/pynotech.png',
+      imgUrl: './assets/image/projects/pynotech.png',
       gitUrl: 'https://github.com/1337KR3W/pyNotech'
     },
   ];

@@ -4,6 +4,5 @@ export interface Certification {
     subtitle: string,
     dateRange: string,
     time: string,
-    imgUrl: string,
     linkUrl: string
 }

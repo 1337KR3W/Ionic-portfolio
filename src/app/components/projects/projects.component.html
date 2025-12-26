@@ -1,4 +1,4 @@
-<ion-grid [fixed]="true">
+<ion-grid [fixed]="true" sm="">
   <!--ROW 1-->
   <ion-row>
     @for (project of projects.slice(0, 2); track project.id) {
@@ -21,7 +21,7 @@
         <div class="hover-overlay">
           <ion-button fill="outline" color="light" class="github-btn" [href]="project.gitUrl" target="blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
-            View GitHub repository
+            Go to GitHub
           </ion-button>
         </div>
       </ion-card>
@@ -50,7 +50,7 @@
         <div class="hover-overlay">
           <ion-button fill="outline" color="light" class="github-btn" [href]="project.gitUrl" target="blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
-            View GitHub repository
+            Go to GitHub
           </ion-button>
         </div>
       </ion-card>
@@ -79,7 +79,7 @@
         <div class="hover-overlay">
           <ion-button fill="outline" color="light" class="github-btn" [href]="project.gitUrl" target="blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
-            View GitHub repository
+            Go to GitHub
           </ion-button>
         </div>
       </ion-card>

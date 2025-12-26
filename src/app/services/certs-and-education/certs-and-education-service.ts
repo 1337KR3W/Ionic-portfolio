@@ -12,7 +12,6 @@ export class CertsAndEducationService {
       subtitle: 'Avante',
       dateRange: '2025/10/20 - 2025/10/24',
       time: '25 hours',
-      imgUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFunNkHpG70PA/profile-treasury-document-cover-images_480/B56ZoCYDRPKIBI-/0/1760976452326?e=1767286800&v=beta&t=7j4pQz9aRty2Q9HYoFVRRAcQmPFkehpFjmXiKLnjPOU',
       linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
     },
     {
@@ -21,7 +20,6 @@ export class CertsAndEducationService {
       subtitle: 'Mainjobs',
       dateRange: '2025/03/27 - 2025/05/02',
       time: '30 hours',
-      imgUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFunNkHpG70PA/profile-treasury-document-cover-images_480/B56ZoCYDRPKIBI-/0/1760976452326?e=1767286800&v=beta&t=7j4pQz9aRty2Q9HYoFVRRAcQmPFkehpFjmXiKLnjPOU',
       linkUrl: 'https://www.linkedin.com/in/josejoaquinsoftware/'
     },
 

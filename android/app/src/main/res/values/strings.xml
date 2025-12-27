@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">portfolio</string>
+    <string name="title_activity_main">portfolio</string>
+    <string name="package_name">com.portfolio.pepecodes</string>
+    <string name="custom_url_scheme">com.portfolio.pepecodes</string>
+</resources>

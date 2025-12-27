@@ -1,0 +1,42 @@
+.separator {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgba(var(--ion-color-medium-rgb), 0.2);
+}
+
+ion-segment {
+    --background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    ion-segment-button {
+        --color: white;
+        --color-checked: var(--theme-accent-color);
+        --indicator-color: var(--theme-accent-color);
+    }
+}
+
+.tab-content {
+    animation: fadeIn 0.4s ease-in;
+    min-height: 220px;
+
+    p {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+
+        strong {
+            color: var(--theme-accent-color);
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

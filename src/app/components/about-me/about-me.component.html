@@ -4,27 +4,58 @@
       <ion-col>
         <ion-card class="project-card">
           <ion-card-header>
-            <ion-item class="project-card">
+            <ion-item class="project-card" lines="none">
               <ion-avatar slot="start">
                 <img alt="Pepe's avatar" src="https://gif-avatars.com/img/200x200/vertical-c.gif" />
               </ion-avatar>
-              <ion-label> <ion-card-title>Jose Joaquin (Pepe) Rojas Romero</ion-card-title>
-                <ion-card-subtitle>Junior FullStack Developer</ion-card-subtitle></ion-label>
+              <ion-label>
+                <ion-card-title>Jose Joaquin Rojas Romero</ion-card-title>
+                <ion-card-subtitle>Junior FullStack Developer</ion-card-subtitle>
+              </ion-label>
             </ion-item>
           </ion-card-header>
+
           <ion-card-content>
-            <strong>Software Engineering</strong> graduate from the <strong>University of
-              Seville (ETSII)</strong>, I
-            possess a solid technical foundation ranging from <strong>Java APIs</strong> and Cybersecurity
-            to desktop GUI development with <strong>Python</strong>, which was the core of my Bachelor's
-            Thesis (TFG). Currently, I am specializing in high-performance <strong>Frontend
-              development</strong>, fully
-            immersed in the <strong>Angular</strong> and <strong>Ionic</strong> ecosystem
-            using <strong>Capacitor</strong>. My goal is to
-            leverage
-            this multidisciplinary background to build <strong>hybrid mobile solutions</strong> and fluid
-            interfaces
-            that are as technically <strong>robust</strong> as they are <strong>user-friendly</strong>.
+            <p class="bio-text">
+              I hold a degree in <strong>Software Engineering</strong> from the <strong>University of Seville
+                (ETSII)</strong>. My fascination with
+              technology began at a very young age, leading me to develop a comprehensive technical toolkit for building
+              <strong>complete</strong> software solutions. When I'm not behind the keyboard, you’ll likely find me
+              making music.
+            </p>
+
+            <hr class="separator" />
+
+            <ion-segment [value]="activeTab" (ionChange)="segmentChanged($event)" mode="md">
+              <ion-segment-button value="skills">
+                <ion-label>Skills</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="education">
+                <ion-label>Education</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+
+            <div class="tab-content ion-padding-top">
+
+              @if (activeTab === 'skills') {
+              <div class="skills-container">
+                <p><strong>Programming Languages: </strong>Java, Python, TypeScript, SQL, CSS, HTML</p>
+                <p><strong>Frameworks: </strong>Angular, Ionic, Spring Boot, Django, Node.js, Tailwind</p>
+                <p><strong>Soft Skills: </strong>Teamwork, Problem Solving, Adaptability, Creative, Agile Methodologies,
+                  Good communication
+                </p>
+                <p><strong>Tools: </strong>Visual Studio
+                  Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver</p>
+              </div>
+              }
+
+              @else {
+              <div class="education-container">
+                <p><strong>University of Seville:</strong> Software Engineering</p>
+                <p><strong>Languages:</strong> Spanish (Native), English (B2)</p>
+              </div>
+              }
+            </div>
           </ion-card-content>
         </ion-card>
       </ion-col>

@@ -41,8 +41,128 @@ $color-primary: greenyellow;
 $color-green-dark: green;
 $color-blue-dark: rgb(71, 143, 250);
 $color-blue-light: rgb(50, 165, 194);
+$color-red-light: rgb(255, 16, 16);
 $color-magenta-light: rgb(185, 65, 233);
 $color-orange-light: rgb(238, 149, 48);
+
+:root {
+    --theme-accent-color: greenyellow;
+}
+
+//-----THEMES
+// Dark) 
+.theme-red {
+    --theme-accent-color: rgb(255, 16, 16);
+
+    ion-button {
+        --background: rgb(255, 16, 16);
+    }
+
+    ion-fab-button {
+        --background: rgb(255, 16, 16);
+    }
+
+    .full-screen-hero {
+        .content-wrapper {
+            .title {
+                color: white;
+            }
+
+            .subtitle {
+                color: var(--ion-color-medium);
+            }
+        }
+    }
+
+    ion-card-title {
+        color: $color-red-light;
+
+    }
+
+    .section-header {
+        box-shadow: 0px 0px 4px $color-red-light;
+    }
+
+    strong {
+        color: $color-red-light;
+    }
+}
+
+//Blue
+.theme-blue {
+    --theme-accent-color: rgb(50, 165, 194);
+
+    ion-button {
+        --background: rgb(50, 165, 194);
+    }
+
+    ion-fab-button {
+        --background: rgb(50, 165, 194);
+    }
+
+    .full-screen-hero {
+        .content-wrapper {
+            .title {
+                color: white;
+            }
+
+            .subtitle {
+                color: var(--ion-color-medium);
+            }
+        }
+    }
+
+    ion-card-title {
+        color: $color-blue-light;
+
+    }
+
+    .section-header {
+        box-shadow: 0px 0px 4px $color-blue-light;
+    }
+
+    strong {
+        color: $color-blue-light;
+    }
+}
+
+// Green
+.theme-green {
+    --theme-accent-color: rgb(173, 255, 47);
+
+    ion-button {
+        --background: rgb(173, 255, 47);
+    }
+
+    ion-fab-button {
+        --background: rgb(173, 255, 47);
+    }
+
+    .full-screen-hero {
+        .content-wrapper {
+            .title {
+                color: white;
+            }
+
+            .subtitle {
+                color: var(--ion-color-medium);
+            }
+        }
+    }
+
+    ion-card-title {
+        color: $color-primary;
+
+    }
+
+    .section-header {
+        box-shadow: 0px 0px 4px $color-primary;
+    }
+
+    strong {
+        color: $color-primary;
+    }
+}
 
 ion-card-title {
     color: $color-primary;
@@ -73,10 +193,44 @@ ion-card-title {
     color: $color-orange-light;
 }
 
+.full-screen-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+
+    .content-wrapper {
+
+
+        .title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: var(--ion-color-dark);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 300;
+            color: var(--ion-color-medium);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: start;
+        }
+    }
+}
+
 .custom-fab-container {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 999;
     display: flex;
     flex-direction: column-reverse;
@@ -115,8 +269,9 @@ ion-button {
 }
 
 ion-fab-button {
-    margin: 0 6px;
+    margin: 4px 4px;
     --background: greenyellow;
+    --color: black;
 }
 
 .project-card {

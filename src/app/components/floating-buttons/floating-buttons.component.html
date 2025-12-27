@@ -1,11 +1,31 @@
 <ion-content>
-  <ion-fab vertical="bottom" horizontal="start" slot="fixed" class="custom-fab-container">
-    <ion-fab-button href="https://github.com/1337KR3W" target="_blank">
-      <ion-icon name="logo-github"></ion-icon>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="custom-fab-container">
+
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
     </ion-fab-button>
 
-    <ion-fab-button href="https://linkedin.com/in/josejoaquinsoftware" target="_blank">
-      <ion-icon name="logo-linkedin"></ion-icon>
-    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://github.com/1337KR3W" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button href="https://linkedin.com/in/josejoaquinsoftware" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="changeTheme('green')" color="success">
+
+      </ion-fab-button>
+
+      <ion-fab-button (click)="changeTheme('blue')" color="secondary">
+
+      </ion-fab-button>
+
+      <ion-fab-button (click)="changeTheme('red')" color="danger">
+
+      </ion-fab-button>
+    </ion-fab-list>
   </ion-fab>
 </ion-content>

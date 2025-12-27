@@ -1,0 +1,18 @@
+<ion-menu contentId="main-content" side="start">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title>Navigation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-list lines="none">
+      @for (item of menuItems; track $index) {
+      <ion-item button (click)="navigateTo(item.id)">
+        <ion-icon slot="start" [name]="item.icon"></ion-icon>
+        <ion-label>{{ item.label }}</ion-label>
+      </ion-item>
+      }
+    </ion-list>
+  </ion-content>
+</ion-menu>

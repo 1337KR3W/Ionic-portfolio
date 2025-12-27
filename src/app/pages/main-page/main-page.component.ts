@@ -12,13 +12,15 @@ import { CubeBackgroundComponent } from "src/app/components/cube-background/cube
 import { GithubChartComponent } from "src/app/components/github-chart/github-chart.component";
 import { FloatingButtonsComponent } from "src/app/components/floating-buttons/floating-buttons.component";
 import { HeroSectionComponent } from "src/app/components/hero-section/hero-section.component";
+import { HeaderComponent } from "src/app/components/header/header.component";
+import { HeaderMobileComponent } from "src/app/components/header-mobile/header-mobile.component";
 
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent, CubeBackgroundComponent, GithubChartComponent, FloatingButtonsComponent, HeroSectionComponent],
+  imports: [AboutMeComponent, SkillsComponent, ProjectsComponent, IonContent, SectionsComponent, WorksComponent, CertsAndEducationComponent, CubeBackgroundComponent, GithubChartComponent, FloatingButtonsComponent, HeroSectionComponent, HeaderComponent, HeaderMobileComponent],
 })
 
 export class MainPageComponent implements OnInit {
@@ -27,11 +29,12 @@ export class MainPageComponent implements OnInit {
   sections: Record<string, SectionCard> = {};
   ngOnInit(): void {
     const allSections = this.sectionService.getSections();
-    this.sections['skills'] = allSections.find(s => s.id === 1)!;
-    this.sections['projects'] = allSections.find(s => s.id === 2)!;
-    this.sections['work-experience'] = allSections.find(s => s.id === 3)!;
-    this.sections['certs-and-education'] = allSections.find(s => s.id === 4)!;
-    this.sections['github-activity'] = allSections.find(s => s.id === 5)!;
+    this.sections['about-me'] = allSections.find(s => s.id === 1)!;
+    this.sections['skills'] = allSections.find(s => s.id === 2)!;
+    this.sections['projects'] = allSections.find(s => s.id === 3)!;
+    this.sections['work-experience'] = allSections.find(s => s.id === 4)!;
+    this.sections['certs-and-education'] = allSections.find(s => s.id === 5)!;
+    this.sections['github-activity'] = allSections.find(s => s.id === 6)!;
   }
 
 }

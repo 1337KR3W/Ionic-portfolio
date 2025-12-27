@@ -1,0 +1,57 @@
+ion-header {
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.1);
+
+    ion-toolbar {
+        --background: transparent;
+        --color: white;
+        padding: 0 5%;
+    }
+
+    ion-title {
+        font-weight: 800;
+        font-size: 1.5rem;
+
+        span {
+            color: var(--theme-accent-color);
+        }
+    }
+
+    ion-button {
+        --color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: none;
+        transition: 0.3s;
+
+        &:hover {
+            --color: var(--theme-accent-color);
+        }
+    }
+}
+
+
+.desktop-nav {
+    display: flex;
+}
+
+.mobile-hamburger {
+    display: none;
+    /* Escondido en escritorio */
+    --color: var(--theme-accent-color);
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+        /* Escondemos los links de texto */
+    }
+
+    .mobile-hamburger {
+        display: block;
+        /* Mostramos la hamburguesa */
+    }
+}

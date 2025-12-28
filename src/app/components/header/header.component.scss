@@ -42,18 +42,15 @@ ion-header {
 
 .mobile-hamburger {
     display: none;
-    /* Escondido en escritorio */
     --color: var(--theme-accent-color);
 }
 
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
-        /* Escondemos los links de texto */
     }
 
     .mobile-hamburger {
         display: block;
-        /* Mostramos la hamburguesa */
     }
 }

@@ -31,9 +31,8 @@
     font-size: 20px;
     transform-style: preserve-3d;
     box-shadow: 0 0 15px var(--theme-accent-color);
-    /* Resplandor dinámico */
     transition: all 0.5s ease;
-    /* Suaviza el cambio de color */
+
 
 }
 
@@ -49,19 +48,16 @@
     font-size: 20px;
     transform-style: preserve-3d;
     box-shadow: 0 0 15px var(--theme-accent-color);
-    /* Resplandor dinámico */
     transition: all 0.5s ease;
-    /* Suaviza el cambio de color */
+
 
 }
 
 .light-text {
     color: var(--theme-accent-color) !important;
     transition: color 0.5s ease;
-    /* Para que el cambio sea suave */
 }
 
-// Posicionamiento de las caras
 .front {
     transform: translateZ(200px);
 }

@@ -13,7 +13,7 @@ export class HeaderMobileComponent {
   menuItems = [
     { id: '', label: '', icon: '' },
     { id: 'home', label: 'Home', icon: 'home-outline' },
-    { id: 'about-me', label: 'About Me', icon: 'person-outline' },
+    { id: 'about-me', label: 'About me', icon: 'person-outline' },
     { id: 'skills', label: 'Skills', icon: 'code-working-outline' },
     { id: 'projects', label: 'Projects', icon: 'folder-open-outline' },
     { id: 'works', label: 'Work Experience', icon: 'briefcase-outline' },

@@ -201,3 +201,8 @@ ion-fab-button {
 
     box-shadow: 0px 0px 4px var(--theme-accent-color);
 }
+
+section,
+[id] {
+    scroll-margin-top: 100px;
+}

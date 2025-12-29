@@ -1,24 +1,38 @@
-<ion-content>
-  <app-hero-section></app-hero-section>
-  <app-cube-background></app-cube-background>
-  <app-header-mobile></app-header-mobile>
-  <div class="ion-page" id="main-content">
-    <app-header></app-header>
+<app-header-mobile></app-header-mobile>
 
-    @for(item of sections; track item.id){
+<div class="ion-page" id="main-content">
 
-    <app-sections [section]="item" [id]="item.title.toLowerCase()"></app-sections>
+  <app-header></app-header>
 
-    @switch (item.id) {
-    @case (1) { <app-about-me /> }
-    @case (2) { <app-skills /> }
-    @case (3) { <app-projects /> }
-    @case (4) { <app-works /> }
-    @case (5) { <app-certs-and-education /> }
-    @case (6) { <app-github-chart /> }
-    }
-    }
+  <ion-content [fullscreen]="true">
 
-  </div>
-  <app-floating-buttons></app-floating-buttons>
-</ion-content>
+    <app-cube-background></app-cube-background>
+
+    <div class="main-container">
+
+      @if (heroData) {
+      <app-hero-section [data]="heroData" id="home"></app-hero-section>
+      }
+
+      @for (item of sections; track item.id) {
+      <div class="section-wrapper" [id]="item.title.toLowerCase()">
+
+        <app-sections [section]="item"></app-sections>
+
+        @switch (item.id) {
+        @case (1) { <app-about-me /> }
+        @case (2) { <app-skills /> }
+        @case (3) { <app-projects /> }
+        @case (4) { <app-works /> }
+        @case (5) { <app-certs-and-education /> }
+        @case (6) { <app-github-chart /> }
+        }
+      </div>
+      }
+
+    </div>
+
+    <app-floating-buttons></app-floating-buttons>
+
+  </ion-content>
+</div>

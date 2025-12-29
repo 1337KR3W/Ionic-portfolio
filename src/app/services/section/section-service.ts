@@ -8,7 +8,11 @@ export class SectionService {
 
 
   private readonly sections: SectionCard[] = [
-
+    {
+      id: 0,
+      title: 'Pepe',
+      description: 'Software Engineer',
+    },
     {
       id: 1,
       title: 'About me',
@@ -43,6 +47,10 @@ export class SectionService {
 
   getSections(): SectionCard[] {
     return this.sections;
+  }
+
+  getHeroData() {
+    return this.sections.find(s => s.id === 0)!;
   }
 
 }

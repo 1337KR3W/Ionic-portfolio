@@ -3,7 +3,7 @@
   <ion-row>
     @for (project of projects.slice(0, 2); track project.id) {
     <ion-col>
-      <ion-card class="project-card">
+      <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
             <img [alt]="project.title" [src]="project.imgUrl" />
@@ -32,7 +32,7 @@
   <ion-row>
     @for (project of projects.slice(2, 6); track project.id) {
     <ion-col>
-      <ion-card class="project-card">
+      <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
             <img [alt]="project.title" [src]="project.imgUrl" />
@@ -61,7 +61,7 @@
   <ion-row>
     @for (project of projects.slice(6, 8); track project.id) {
     <ion-col>
-      <ion-card class="project-card">
+      <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
             <img [alt]="project.title" [src]="project.imgUrl" />

@@ -21,7 +21,7 @@
 
         @switch (item.id) {
         @case (1) { <app-about-me [profileData]="item.extraData" /> }
-        @case (2) { <app-skills /> }
+        @case (2) { <app-skills [skills]="item.extraData?.technicalSkills || []" /> }
         @case (3) { <app-projects /> }
         @case (4) { <app-works /> }
         @case (5) { <app-certs-and-education /> }

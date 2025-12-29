@@ -6,7 +6,7 @@
           <ion-card-header>
             <ion-item class="project-card" lines="none">
               <ion-avatar slot="start">
-                <img alt="Pepe's avatar" src="https://gif-avatars.com/img/200x200/vertical-c.gif" />
+                <img alt="Pepe's avatar" [src]="profileData?.avatarUrl" />
               </ion-avatar>
               <ion-label>
                 <ion-card-title>{{profileData?.fullName}}</ion-card-title>
@@ -17,12 +17,6 @@
 
           <ion-card-content>
             <p class="bio-text">{{profileData?.bio}}</p>
-            <!--Graduated in <strong>Software Engineering</strong> at the <strong>University of Seville (US)</strong> at
-              the <strong>Higher Technical School of Computer Engineering (ETSII)</strong>. I have liked computers since
-              I was a child and I am currently <strong>professionally dedicated</strong> to it, particularly the
-              development of <strong>hybrid solutions for mobile phones</strong>. I enjoy my free time making music,
-              hosting dedicated servers of some video games and <strong>always learning</strong> something new.
-            </p>-->
 
             <hr class="separator" />
 
@@ -43,13 +37,6 @@
                 <p><strong>Frameworks: </strong>{{ profileData?.skills?.frameworks }}</p>
                 <p><strong>Soft Skills: </strong>{{ profileData?.skills?.softSkills }}</p>
                 <p><strong>Tools: </strong>{{ profileData?.skills?.tools }}</p>
-                <!--<p><strong>Programming Languages: </strong>Java, Python, TypeScript, SQL, CSS, HTML</p>
-                <p><strong>Frameworks: </strong>Angular, Ionic, Spring Boot, Django, Node.js, Tailwind</p>
-                <p><strong>Soft Skills: </strong>Teamwork, Problem Solving, Adaptability, Creative, Agile Methodologies,
-                  Good communication
-                </p>
-                <p><strong>Tools: </strong>Visual Studio
-                  Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver</p>-->
               </div>
               }
 
@@ -58,8 +45,6 @@
                 <p><strong>University: </strong>{{ profileData?.education?.university }}</p>
                 <p><strong>Degree: </strong>{{ profileData?.education?.degree }}</p>
                 <p><strong>Languages: </strong>{{ profileData?.education?.languages }}</p>
-                <!--<p><strong>University of Seville:</strong> Software Engineering</p>
-                <p><strong>Languages:</strong> Spanish (Native), English (B2)</p>-->
               </div>
               }
             </div>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SectionCard } from 'src/app/models/card/section-card/section-card.model';
+import { SectionCard } from 'src/app/models/section-card/section-card.model';
 
 @Injectable({
   providedIn: 'root',

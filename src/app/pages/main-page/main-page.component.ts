@@ -4,7 +4,7 @@ import { SkillsComponent } from "src/app/components/skills/skills.component";
 import { ProjectsComponent } from "src/app/components/projects/projects.component";
 import { IonContent } from "@ionic/angular/standalone";
 import { SectionService } from 'src/app/services/section/section-service';
-import { SectionCard } from 'src/app/models/card/section-card/section-card.model';
+import { SectionCard } from 'src/app/models/section-card/section-card.model';
 import { SectionsComponent } from "src/app/components/sections/sections.component";
 import { WorksComponent } from "src/app/components/works/works.component";
 import { CertsAndEducationComponent } from "src/app/components/certs-and-education/certs-and-education.component";

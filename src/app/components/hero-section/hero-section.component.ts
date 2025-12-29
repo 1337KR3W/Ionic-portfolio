@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SectionCard } from 'src/app/models/card/section-card/section-card.model';
+import { SectionCard } from 'src/app/models/section-card/section-card.model';
 
 @Component({
   selector: 'app-hero-section',

@@ -26,15 +26,11 @@ import { HeaderMobileComponent } from "src/app/components/header-mobile/header-m
 export class MainPageComponent implements OnInit {
 
   private sectionService = inject(SectionService);
-  sections: Record<string, SectionCard> = {};
+
+  sections: SectionCard[] = [];
+
   ngOnInit(): void {
-    const allSections = this.sectionService.getSections();
-    this.sections['about-me'] = allSections.find(s => s.id === 1)!;
-    this.sections['skills'] = allSections.find(s => s.id === 2)!;
-    this.sections['projects'] = allSections.find(s => s.id === 3)!;
-    this.sections['work-experience'] = allSections.find(s => s.id === 4)!;
-    this.sections['certs-and-education'] = allSections.find(s => s.id === 5)!;
-    this.sections['github-activity'] = allSections.find(s => s.id === 6)!;
+    this.sections = this.sectionService.getSections();
   }
 
 }

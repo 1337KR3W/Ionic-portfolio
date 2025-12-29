@@ -1,46 +1,24 @@
-<app-header-mobile></app-header-mobile>
-<div class="ion-page" id="main-content">
+<ion-content>
+  <app-hero-section></app-hero-section>
+  <app-cube-background></app-cube-background>
+  <app-header-mobile></app-header-mobile>
+  <div class="ion-page" id="main-content">
+    <app-header></app-header>
 
+    @for(item of sections; track item.id){
 
-  <app-header></app-header>
-  <ion-content>
-    <app-hero-section></app-hero-section>
-    <app-cube-background></app-cube-background>
-    @if (sections['about-me']) {
-    <app-sections [section]="sections['about-me']" id="about-me"></app-sections>
-    <app-about-me></app-about-me>
+    <app-sections [section]="item" [id]="item.title.toLowerCase()"></app-sections>
+
+    @switch (item.id) {
+    @case (1) { <app-about-me /> }
+    @case (2) { <app-skills /> }
+    @case (3) { <app-projects /> }
+    @case (4) { <app-works /> }
+    @case (5) { <app-certs-and-education /> }
+    @case (6) { <app-github-chart /> }
+    }
     }
 
-    @if (sections['skills']) {
-    <app-sections [section]="sections['skills']" id="skills"></app-sections>
-    <app-skills></app-skills>
-    }
-
-
-    @if (sections['projects']) {
-    <app-sections [section]="sections['projects']" id="projects"></app-sections>
-    <app-projects></app-projects>
-    }
-
-
-    @if (sections['work-experience']) {
-    <app-sections [section]="sections['work-experience']" id="works"></app-sections>
-    <app-works></app-works>
-    }
-
-
-    @if (sections['certs-and-education']) {
-    <app-sections [section]="sections['certs-and-education']" id="education"></app-sections>
-    <app-certs-and-education></app-certs-and-education>
-    }
-
-
-    @if (sections['github-activity']) {
-    <app-sections [section]="sections['github-activity']" id="github-activity"></app-sections>
-    <app-github-chart></app-github-chart>
-    }
-
-    <app-floating-buttons></app-floating-buttons>
-
-  </ion-content>
-</div>
+  </div>
+  <app-floating-buttons></app-floating-buttons>
+</ion-content>

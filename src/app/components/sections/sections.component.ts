@@ -9,14 +9,9 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardContent } from "@ionic/ang
   styleUrls: ['./sections.component.scss'],
   imports: [IonCard, IonCardHeader, IonCardTitle, IonCardContent],
 })
-export class SectionsComponent implements OnInit {
+export class SectionsComponent {
+
   @Input({ required: true }) section!: SectionCard;
-  private readonly sectionService = inject(SectionService);
-  sections: SectionCard[] = [];
-  constructor() { }
-  ngOnInit() {
-    this.sections = this.sectionService.getSections();
-  }
 
 
 }

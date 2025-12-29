@@ -22,10 +22,10 @@
         @switch (item.id) {
         @case (1) { <app-about-me [profileData]="item.extraData" /> }
         @case (2) { <app-skills [skills]="item.extraData?.technicalSkills || []" /> }
-        @case (3) { <app-projects /> }
-        @case (4) { <app-works /> }
-        @case (5) { <app-certs-and-education /> }
-        @case (6) { <app-github-chart /> }
+        @case (3) { <app-projects [projects]="item.extraData?.projects || []" /> }
+        @case (4) { <app-works [works]="item.extraData?.workExperience || []" /> }
+        @case (5) { <app-certs-and-education [certsAndEducation]="item.extraData?.certifications || []" />}
+        @case (6) { <app-github-chart [gitHubChart]="item.extraData?.githubChart" /> }
         }
       </div>
       }

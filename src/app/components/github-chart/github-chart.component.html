@@ -1,16 +1,16 @@
 <ion-grid [fixed]="true">
   <ion-row>
-    @for (ghc of gitHubChart; track ghc.id) {
+    @if ( gitHubChart) {
     <ion-col>
       <ion-grid [fixed]="true">
         <ion-row>
           <ion-col>
             <ion-card>
               <ion-card-header>
-                <ion-card-title>{{ghc.title}}</ion-card-title>
+                <ion-card-title>{{gitHubChart.title}}</ion-card-title>
               </ion-card-header>
               <ion-card-content>
-                <img [src]="ghc.imgUrl" alt="Github Chart" />
+                <img [src]="gitHubChart.imgUrl" alt="Github Chart" />
               </ion-card-content>
             </ion-card>
           </ion-col>

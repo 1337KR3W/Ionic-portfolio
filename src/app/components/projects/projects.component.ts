@@ -1,7 +1,7 @@
-import { Component, inject, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonCol, IonCardSubtitle, IonButton, IonIcon } from "@ionic/angular/standalone";
 import { Project } from 'src/app/models/project/project.model';
-import { ProjectService } from 'src/app/services/project/project-service';
+
 
 @Component({
   selector: 'app-projects',
@@ -12,5 +12,6 @@ import { ProjectService } from 'src/app/services/project/project-service';
 export class ProjectsComponent {
 
   @Input() projects: Project[] = [];
+
 
 }

@@ -1,8 +1,8 @@
-<ion-grid [fixed]="true" sm="">
-  <!--ROW 1-->
+<ion-grid [fixed]="true">
+
   <ion-row>
     @for (project of projects.slice(0, 2); track project.id) {
-    <ion-col>
+    <ion-col size="12" size-md="6">
       <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
@@ -16,10 +16,11 @@
         </ion-card-header>
 
         <ion-card-content>
-          {{project.description}}.
+          {{project.description}}
         </ion-card-content>
+
         <div class="hover-overlay">
-          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="_blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
             Go to GitHub
           </ion-button>
@@ -28,10 +29,10 @@
     </ion-col>
     }
   </ion-row>
-  <!--ROW 2-->
+
   <ion-row>
     @for (project of projects.slice(2, 6); track project.id) {
-    <ion-col>
+    <ion-col size="12" size-sm="6" size-md="3">
       <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
@@ -47,8 +48,9 @@
         <ion-card-content>
           {{project.description}}
         </ion-card-content>
+
         <div class="hover-overlay">
-          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="_blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
             Go to GitHub
           </ion-button>
@@ -57,10 +59,10 @@
     </ion-col>
     }
   </ion-row>
-  <!--ROW 3-->
+
   <ion-row>
     @for (project of projects.slice(6, 8); track project.id) {
-    <ion-col>
+    <ion-col size="12" size-md="6">
       <ion-card class="item-card">
         <div class="card-content-wrapper">
           <div class="image-container">
@@ -76,8 +78,9 @@
         <ion-card-content>
           {{project.description}}
         </ion-card-content>
+
         <div class="hover-overlay">
-          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="blank">
+          <ion-button fill="outline" class="github-btn" [href]="project.gitUrl" target="_blank">
             <ion-icon slot="start" name="logo-github"></ion-icon>
             Go to GitHub
           </ion-button>

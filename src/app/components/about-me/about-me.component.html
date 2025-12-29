@@ -9,20 +9,20 @@
                 <img alt="Pepe's avatar" src="https://gif-avatars.com/img/200x200/vertical-c.gif" />
               </ion-avatar>
               <ion-label>
-                <ion-card-title>Jose Joaquin (Pepe) Rojas Romero</ion-card-title>
-                <ion-card-subtitle>Junior FullStack Developer</ion-card-subtitle>
+                <ion-card-title>{{profileData?.fullName}}</ion-card-title>
+                <ion-card-subtitle>{{profileData?.jobTitle}}</ion-card-subtitle>
               </ion-label>
             </ion-item>
           </ion-card-header>
 
           <ion-card-content>
-            <p class="bio-text">
-              Graduated in <strong>Software Engineering</strong> at the <strong>University of Seville (US)</strong> at
+            <p class="bio-text">{{profileData?.bio}}</p>
+            <!--Graduated in <strong>Software Engineering</strong> at the <strong>University of Seville (US)</strong> at
               the <strong>Higher Technical School of Computer Engineering (ETSII)</strong>. I have liked computers since
               I was a child and I am currently <strong>professionally dedicated</strong> to it, particularly the
               development of <strong>hybrid solutions for mobile phones</strong>. I enjoy my free time making music,
               hosting dedicated servers of some video games and <strong>always learning</strong> something new.
-            </p>
+            </p>-->
 
             <hr class="separator" />
 
@@ -39,20 +39,27 @@
 
               @if (activeTab === 'skills') {
               <div class="skills-container">
-                <p><strong>Programming Languages: </strong>Java, Python, TypeScript, SQL, CSS, HTML</p>
+                <p><strong>Languages: </strong>{{ profileData?.skills?.languages }}</p>
+                <p><strong>Frameworks: </strong>{{ profileData?.skills?.frameworks }}</p>
+                <p><strong>Soft Skills: </strong>{{ profileData?.skills?.softSkills }}</p>
+                <p><strong>Tools: </strong>{{ profileData?.skills?.tools }}</p>
+                <!--<p><strong>Programming Languages: </strong>Java, Python, TypeScript, SQL, CSS, HTML</p>
                 <p><strong>Frameworks: </strong>Angular, Ionic, Spring Boot, Django, Node.js, Tailwind</p>
                 <p><strong>Soft Skills: </strong>Teamwork, Problem Solving, Adaptability, Creative, Agile Methodologies,
                   Good communication
                 </p>
                 <p><strong>Tools: </strong>Visual Studio
-                  Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver</p>
+                  Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver</p>-->
               </div>
               }
 
               @else {
               <div class="education-container">
-                <p><strong>University of Seville:</strong> Software Engineering</p>
-                <p><strong>Languages:</strong> Spanish (Native), English (B2)</p>
+                <p><strong>University: </strong>{{ profileData?.education?.university }}</p>
+                <p><strong>Degree: </strong>{{ profileData?.education?.degree }}</p>
+                <p><strong>Languages: </strong>{{ profileData?.education?.languages }}</p>
+                <!--<p><strong>University of Seville:</strong> Software Engineering</p>
+                <p><strong>Languages:</strong> Spanish (Native), English (B2)</p>-->
               </div>
               }
             </div>

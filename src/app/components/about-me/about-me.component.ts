@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonItem, IonAvatar, IonLabel, IonGrid, IonRow, IonCol, IonSegment, IonSegmentButton } from "@ionic/angular/standalone";
 
 @Component({
@@ -7,15 +7,12 @@ import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
   styleUrls: ['./about-me.component.scss'],
   imports: [IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonItem, IonAvatar, IonLabel, IonGrid, IonRow, IonCol, IonSegment, IonSegmentButton],
 })
-export class AboutMeComponent implements OnInit {
+export class AboutMeComponent {
 
+  @Input() profileData: any;
   activeTab: string = 'skills';
   segmentChanged(event: any) {
     this.activeTab = event.detail.value;
   }
-
-  constructor() { }
-
-  ngOnInit() { }
 
 }

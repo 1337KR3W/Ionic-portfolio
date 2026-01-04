@@ -63,8 +63,8 @@ export class SectionService {
             id: 1,
             title: 'Acme Platform',
             subtitle: 'Java, Maven, Spring Boot',
-            description: 'A platform for students and teachers.',
-            imgUrl: './assets/image/skills/springboot.webp',
+            description: 'A platform for students and teachers developed with Java, Lombok and mariaDB in Eclipse.',
+            imgUrl: './assets/image/projects/acme.png',
             gitUrl: 'https://github.com/1337KR3W/DP2-G27-Acme'
           },
           {

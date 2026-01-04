@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonCol, IonRow } from "@ionic/angular/standalone";
 import { GitHubChart } from 'src/app/models/github-chart/github-chart.model';
 
@@ -8,10 +8,13 @@ import { GitHubChart } from 'src/app/models/github-chart/github-chart.model';
   styleUrls: ['./github-chart.component.scss'],
   imports: [IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonGrid, IonCol, IonRow],
 })
-export class GithubChartComponent {
+export class GithubChartComponent implements OnInit {
 
 
   @Input() gitHubChart?: GitHubChart;
 
+  ngOnInit(): void {
+    console.log(this.gitHubChart)
+  }
 
 }

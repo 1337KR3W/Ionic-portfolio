@@ -61,6 +61,22 @@ npm install @ionic/angular@latest
 ```
 ionic serve
 ```
+#### Production build (alias)
+```
+ionic build --prod
+```
+#### Production build explicit
+```
+ionic build --configuration=production
+```
+#### Staging build (If 'staging' config exists in angular.json)
+```
+ionic build -c=staging
+```
+#### Additional options from Angular CLI:
+```
+ionic build -c=production -- --base-href=/app/ --source-map=false
+```
 ---
 ### 3. Capacitor
 #### Create a new Capacitor app:
@@ -104,22 +120,6 @@ ionic build
 npx cap copy android
 npx cap open android
 ```
-#### Production build (alias)
-```
-ionic build --prod
-```
-#### Production build explicit
-```
-ionic build --configuration=production
-```
-#### Staging build (If 'staging' config exists in angular.json)
-```
-ionic build -c=staging
-```
-#### Additional options from Angular CLI:
-```
-ionic build -c=production -- --base-href=/app/ --source-map=false
-```
 #### [Capacitor Android Documentation](https://capacitorjs.com/docs/android)
 #### [Capacitor iOS Documentation](https://capacitorjs.com/docs/ios)
 ---
@@ -137,3 +137,10 @@ ionic build --prod -- --base-href /YOUR_REPOSITORY_NAME/
 ```
 npx angular-cli-ghpages --dir=www
 ```
+---
+### Extra: Building an APK from Android Studio
+* Enable Developer options on your mobile device
+* Enable USB debugging
+* Connect your device via cable and ensure Android Studio detects it (in the device list)
+* In Android Studio, go to: Build > Build Bundle(s) / APK(s) > Build APK(s). This will generate an .apk file in the "app/build/outputs/apk/debug/" folder
+* Once you have the APK file, copy it to your mobile device (using a USB-C cable in my case) and place it in the Downloads folder. Then, click to install the APK

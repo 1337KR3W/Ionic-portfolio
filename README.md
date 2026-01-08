@@ -4,7 +4,7 @@ This repository contains a setup guide and the source code for a hybrid mobile a
 
 ---
 
-## Prerequisites
+## Requirements
 
 To avoid version conflicts in the development environment, using a Node.js version manager is highly recommended.
 
@@ -103,6 +103,22 @@ npx cap sync
 ionic build
 npx cap copy android
 npx cap open android
+```
+#### Production build (alias)
+```
+ionic build --prod
+```
+#### Production build explicit
+```
+ionic build --configuration=production
+```
+#### Staging build (If 'staging' config exists in angular.json)
+```
+ionic build -c=staging
+```
+#### Additional options from Angular CLI:
+```
+ionic build -c=production -- --base-href=/app/ --source-map=false
 ```
 #### [Capacitor Android Documentation](https://capacitorjs.com/docs/android)
 #### [Capacitor iOS Documentation](https://capacitorjs.com/docs/ios)

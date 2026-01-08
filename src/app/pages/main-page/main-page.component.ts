@@ -25,7 +25,7 @@ import { HeaderMobileComponent } from "src/app/components/header-mobile/header-m
 
 export class MainPageComponent implements OnInit {
 
-  private sectionService = inject(SectionService);
+  private readonly sectionService = inject(SectionService);
   heroData!: SectionCard;
   sections: SectionCard[] = [];
 

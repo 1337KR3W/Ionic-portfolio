@@ -25,8 +25,8 @@ export class SectionService {
         skills: {
           languages: 'Java, Python, TypeScript, SQL, CSS, HTML',
           frameworks: 'Angular, Ionic, Spring Boot, Django, Node.js, Tailwind',
-          softSkills: 'Teamwork, Problem Solving, Adaptability',
-          tools: 'VS Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver'
+          softSkills: 'Teamwork, Problem Solving, Adaptability, Creativity, Planning process',
+          tools: 'nvm, VS Code, Eclipse, Jira, Git, Docker, Capacitor, Postman, Windows, Linux, VirtualBox, DBeaver'
         },
         education: {
           university: 'University of Seville',
@@ -128,7 +128,7 @@ export class SectionService {
     },
     {
       id: 4,
-      title: 'Work experience',
+      title: 'Work Experience',
       description: 'A summary of my professional trajectory and the impact I’ve made at different companies:',
       extraData: {
         workExperience: [
@@ -145,7 +145,7 @@ export class SectionService {
     },
     {
       id: 5,
-      title: 'Certifications & Education',
+      title: 'Certs & Education',
       description: 'A record of my academic background and specialized technical certifications:',
       extraData: {
         certifications: [

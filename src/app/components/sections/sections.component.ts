@@ -1,6 +1,5 @@
-import { Component, inject, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SectionCard } from 'src/app/models/section-card/section-card.model';
-import { SectionService } from 'src/app/services/section/section-service';
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent } from "@ionic/angular/standalone";
 
 @Component({

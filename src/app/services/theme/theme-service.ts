@@ -19,6 +19,7 @@ export class ThemeService {
 
     localStorage.setItem('user-theme', themeName);
   }
+
   private updateFavicon(themeName: string) {
     const favicon = document.getElementById('app-favicon') as HTMLLinkElement;
     if (favicon) {

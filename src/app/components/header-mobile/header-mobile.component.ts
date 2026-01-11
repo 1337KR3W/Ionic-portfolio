@@ -20,8 +20,6 @@ export class HeaderMobileComponent {
     { id: 'certs & education', label: 'Certs & Education', icon: 'school-outline' }
   ];
 
-  constructor() { }
-
   async navigateTo(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {

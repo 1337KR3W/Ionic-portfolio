@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonButton, IonButtons, IonMenuButton } from "@ionic/angular/standalone";
 
 @Component({
@@ -7,15 +7,13 @@ import { IonHeader, IonToolbar, IonTitle, IonButton, IonButtons, IonMenuButton }
   styleUrls: ['./header.component.scss'],
   imports: [IonHeader, IonToolbar, IonTitle, IonButton, IonButtons, IonMenuButton],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  constructor() { }
 
-  ngOnInit() { }
 
 }
